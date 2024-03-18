@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Ojuju:wght@200..800&display=swap')
+
+:root {
+    --clr-main: #4b33a8;
+    --clr-white: #ececec;
+    --clr-gray: #e2e2e2;
+    --clr-red: #961818;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Ojuju", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, input, textarea, ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrapper {
+    display: flex;
+    grid-template-columns: 1fr 4fr;
+    background-color: #4b33a8
+}
+
+aside {
+    padding: 2rem;
+    color:  #ececec;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo {
+    font-weight: 400;
+    font-size: 1.8rem;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.boton-categoria {
+    background-color: transparent;
+    border: 0;
+    color: #e2e2e2;
+    font-size: 1.1rem;
+    cursor: pointer;
+    display: flex;
+    gap: 1rem;
+    font-weight: 600;
+    padding: 0;
+}
+
+.boton-categoria.active {
+    background-color: #e2e2e2;
+    color: #4b33a8;
+    width: 100%;
+}
+
+footer {
+    color: gray;
+    font-size: .85rem;
+}
+
+main {
+    background-color: #ececec;
+    margin: 1rem;
+    margin-left: 0rem;
+    border-radius: 2rem;
+    padding: 2rem;
+}
+
+.titulo-principal {
+    color: #4b33a8;
+    margin-bottom: 2rem;
+}
+
+.contendedor-productos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.producto-imagen {
+    max-width: 100%;
+    max-height: 70%;
+    border-radius: 2rem;
+}
+
+.producto-detalles {
+    position: relative;
+    background-color: #4b33a8;
+    color: #e2e2e2;
+    padding: .5rem;
+    border-radius: 1rem;
+    margin-top: -2rem;
+}
+
+.producto-titulo {
+    font-size: 1rem;
+}
+
+.prodcuto-agregar {
+    width: 100%;
+    border: 0;
+    background-color: #e2e2e2;
+    color: #4b33a8;
+    padding: .4rem;
+    text-transform: uppercase;
+    border-radius: 1rem;
+    cursor: pointer;
+    border: 2px solid #e2e2e2;
+    transition: background-color .2s, color .2s;
+}
+
+.prodcuto-agregar:hover {
+    background-color: #644d95;
+    color: #e2e2e2;
+}
+
