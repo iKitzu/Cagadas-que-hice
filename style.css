@@ -91,11 +91,16 @@ main {
     margin-bottom: 2rem;
 }
 
+/*ESto es un comentario para el commit XD*/
+
 .contendedor-productos {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
 }
+
+/*Tengo que estudiarme es el Grid*/
+
 
 .producto-imagen {
     max-width: 100%;
